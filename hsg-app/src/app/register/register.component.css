@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.regContainer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background: #fafafa;
+}
+
+.card {
+    padding: 1em;
+    margin: auto;
+    height: 650px;
+    width: 400px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.user,
+.pasw,
+.cpasw,
+.country {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.user-img img {
+    position: absolute;
+    top: -40px;
+    left: 40%;
+}
+
+.user-icon,
+.key-icon,
+.lock-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 25px;
+    color: rgb(36, 75, 214);
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 1em;
+    margin: 20px 0px 34px 0px;
+    border: none;
+    padding-left: 50px;
+    border-bottom: 1px solid lightgrey;
+    font-size: 24px;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    color: rgb(36, 75, 214);
+}
+
+input[type="checkbox"]:checked {
+    color: rgb(36, 75, 214);
+}
+
+.tnc {
+    font-size: 20px;
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom: 2px solid rgb(36, 75, 214);
+    transition: all 0.51s ease;
+}
+
+.regbtn {
+    height: 50;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid blue;
+    color: rgb(36, 75, 214);
+}
+
+.regbtn:hover {
+    background: rgb(36, 75, 214);
+    border: 1px solid blue;
+    color: #fff;
+    ;
+}

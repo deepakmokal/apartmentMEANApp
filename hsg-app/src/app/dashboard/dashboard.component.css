@@ -1,0 +1,70 @@
+.example-container {
+    margin-top: 70px;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content button {
+      border:none;
+      width: 60px;
+      height: 60px;
+      background: transparent;
+    
+  }
+  .example-sidenav-content button:hover {
+    border:none;
+    background: transparent;
+}
+
+.example-sidenav-content button:focus {
+    border:none;
+    outline: none;
+    background: transparent;
+}
+
+  
+  
+  .example-sidenav {
+    padding: 0px;
+    background-color: #0062cc;
+  }
+
+  ul{
+      
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+
+ ul li{
+    text-indent: 0;
+    margin: 10px;
+    text-decoration: none;
+  }
+
+  li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-indent: 0;
+    padding: 5px;
+    margin: 5px;
+}
+
+li:hover{
+    background: rgba(73,155,234,1);
+}
+
+.logoutbtn{
+    background: rgba(73,155,234,1) !important;
+    color: #fff;
+    width: 100px !important;
+}
+
+.logoutbtn:hover{
+    background: #0062cc !important;
+}
+  

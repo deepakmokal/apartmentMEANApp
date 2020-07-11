@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*{
+
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.primarybtn{
+    background: rgba(73,155,234,1) !important;
+    color: #fff;
+    width: 100px !important;
+    height: 40px;
+    border:none;
+    outline: none;
+}
+
+.primarybtn:hover{
+    background: #0062cc !important;
+}

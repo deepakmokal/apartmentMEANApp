@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        <div class="regContainer">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="user-img">
+                        <img class="rounded-circle" src="../../assets/user-img.png" alt="user" height="80" width="80">
+                    </div>
+
+                    <h3 class="text-info text-center">{{ successMsg }}</h3>
+
+                    <form action="" [formGroup]=registerForm>
+                        <div class="user">
+
+                            <input formControlName='email' class="form-control" type="email" name="email" id="mail" placeholder="Enter the E-mail ID">
+                            <span class="user-icon"><i class="fas  fa-user"></i></span>
+                            <span class="text-danger" *ngIf="isValid('email')">Please enter valid email address.</span>
+                        </div>
+
+                        <div class="pasw">
+                            <input formControlName='password' class="form-control" type="password" name="password" id="passwrd" placeholder="Enter the Password">
+                            <span class="key-icon"><i class="fas  fa-lock"></i></span>
+                            <span class="text-danger" *ngIf="isValid('password')">Password is manditory.</span>
+                        </div>
+
+
+                        <div class="cpasw">
+                            <input formControlName='cnfPassword' class="form-control" type="password" name="password" id="cpasswrd" placeholder="Confirm Password">
+                            <span class="lock-icon"><i class="fas  fa-lock"></i></span>
+                            <span class="text-danger" *ngIf="isValid('cnfPassword')">password field should be match.</span>
+                        </div>
+
+
+                        <div class="terms mt-5">
+                            <input type="checkbox" name="terms">
+                            <span class="tnc"> I accept terms and conditions.</span>
+                        </div>
+
+
+                    </form>
+                    <div class="forget mt-3 mb-3">
+                        <a href="#" class="align-right"> Forget Password? </a>
+                    </div>
+
+                    <button (click)='register()' class="btn btn-block regbtn">Register</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
